@@ -1,0 +1,17 @@
+﻿@page "/"
+<iframe style="width:100vw;height:100vh" src="@Convert.ToBase64String(bytesPdf)"></iframe>
+
+
+
+@code {
+    protected Byte[] bytesPdf;
+
+    protected override async Task OnInitializedAsync()
+    {
+        bytesPdf = ResilienceReporting.IndividualReport.CreateReport();
+
+    }
+
+
+
+}
