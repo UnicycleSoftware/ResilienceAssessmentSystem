@@ -23,6 +23,7 @@ namespace ResilienceMVCClientApp.Controllers
             // return File(ResilienceReporting.IndividualReport.CreateReport(), "application/pdf", "test.pdf");
 
             var calc = new ResilienceReporting.CalculationHelper();
+
             calc.Debug();
             return null;
         }
